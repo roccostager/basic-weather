@@ -1,0 +1,49 @@
+/* Fonts: Karla, Nunito, Atkinson Hyperlegible Mono */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Typography Styles */
+h1, .h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2rem;
+}
+
+p, .p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+.search-bar {
+    width: min(100vw, 600px);
+}
+.search-bar fieldset {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding: 0.5rem;
+
+    border-radius: 1000px;
+    background-color: oklch(50% 0 0 / 50%);
+    backdrop-filter: blur(5px);
+}
+.search-bar fieldset * {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+.search-bar fieldset input[type="text"] {
+    flex: 1;
+}
+.search-bar fieldset button[type="submit"] {
+    height: 100%;
+    aspect-ratio: 1;
+    border: none;
+}
