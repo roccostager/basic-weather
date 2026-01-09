@@ -11,6 +11,8 @@ h1, .h1 {
 
 p, .p {
     font-family: 'Nunito', sans-serif;
+    color: oklch(95% 0 0);
+    font-size: 1.25rem;
 }
 
 body {
@@ -26,6 +28,8 @@ body {
     backdrop-filter: blur(20px);
     box-sizing: border-box;
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 .content {
     display: flex;
@@ -46,6 +50,7 @@ body {
     justify-content: baseline;
     align-items: center;
     padding: 0.5rem;
+    padding-left: 1rem;
 
     border-radius: 1000px;
     background-color: oklch(0% 0 0 / 20%);
@@ -65,7 +70,9 @@ body {
     aspect-ratio: 1;
     border: none;
 }
-.search-bar button > img {
-    width: 18px;
+.search-bar button > svg {
+    width: 24px;
     aspect-ratio: 1;
+    margin: 0;
+    padding: 0;
 }
